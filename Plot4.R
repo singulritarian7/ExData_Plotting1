@@ -36,6 +36,7 @@ with(data,lines(datetime,Sub_metering_1))
 with(data,lines(datetime,Sub_metering_2,col="red"))
 with(data,lines(datetime,Sub_metering_3,col="blue"))
 legend("topright",lty = 1, col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), cex = 0.6)
+plot(datetime,data$Global_reactive_power,type="l", ylab = "Global_reactive_power")
 
 # Copy the plot to another graphic device(png file) and don´t forget to close the device.
 
